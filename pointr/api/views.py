@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from api.models import Points
+from api.serializers import PointsSerializer
+from rest_framework import generics
 
-# Create your views here.
+
+class GetCreatePointsApiView(generics.ListCreateAPIView):
+    queryset = Points.objects.all()
+    serializer_class = PointsSerializer
