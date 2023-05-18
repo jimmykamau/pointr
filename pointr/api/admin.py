@@ -1,3 +1,4 @@
+from api.models import Points
 from django.contrib import admin
 
-# Register your models here.
+admin.site.register(Points)
