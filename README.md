@@ -16,6 +16,8 @@ This Django application allows you to find the closest points on a grid given a 
    cd pointr
    ```
 
+2. Create a `.env` file with the contents of [.env.example](pointr/.env.example), updating the values as required.
+
 3. Build and start the Docker containers using Docker Compose:
 
    ```shell
